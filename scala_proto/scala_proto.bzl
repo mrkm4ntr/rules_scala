@@ -12,8 +12,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_protoc_jar",
-        artifact = "com.github.os72:protoc-jar:3.2.0",
-        sha1 = "7c06b12068193bd2080caf45580b0a00d2a31638",
+        artifact = "com.github.os72:protoc-jar:3.5.1.1",
+        sha1 = "abb56febf99905fa0e5199b7d8ec64b0057cc8d5",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -24,8 +24,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapb_plugin",
-        artifact = scala_mvn_artifact("com.trueaccord.scalapb:compilerplugin:0.6.5"),
-        sha1 = "290094c632c95b36b6f66d7dbfdc15242b9a247f",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:compilerplugin:0.7.2"),
+        sha1 = "d49d5731af36d36422d12a7e85febac95d87a5c7",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -36,8 +36,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_protoc_bridge",
-        artifact = scala_mvn_artifact("com.trueaccord.scalapb:protoc-bridge:0.3.0-M1"),
-        sha1 = "73d38f045ea8f09cc1264991d1064add6eac9e00",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:protoc-bridge:0.7.3"),
+        sha1 = "ac6f5164745f8c796528a6cdd4ecf0e2814010cd",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -48,8 +48,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapbc",
-        artifact = scala_mvn_artifact("com.trueaccord.scalapb:scalapbc:0.6.5"),
-        sha1 = "b204d6d56a042b973af5b6fe28f81ece232d1fe4",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:scalapbc:0.7.2"),
+        sha1 = "ff08ac2b93c5aa102c729ffd1e9485a27baf832c",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -60,8 +60,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapb_runtime",
-        artifact = scala_mvn_artifact("com.trueaccord.scalapb:scalapb-runtime:0.6.5"),
-        sha1 = "ac9287ff48c632df525773570ee4842e3ddf40e9",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:scalapb-runtime:0.7.2"),
+        sha1 = "47e554a37d53f828496c1f89575328bc5783273d",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -72,8 +72,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapb_runtime_grpc",
-        artifact = scala_mvn_artifact("com.trueaccord.scalapb:scalapb-runtime-grpc:0.6.5"),
-        sha1 = "9dc3374001f4190548db36a7dc87bd4f9bca6f9c",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:scalapb-runtime-grpc:0.7.2"),
+        sha1 = "6e9fdd815caec7569e22a2f856e1fcb9ddc149da",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -84,8 +84,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapb_lenses",
-        artifact = scala_mvn_artifact("com.trueaccord.lenses:lenses:0.4.12"),
-        sha1 = "c5fbf5b872ce99d9a16d3392ccc0d15a0e43d823",
+        artifact = scala_mvn_artifact("com.thesamet.scalapb:lenses:0.7.0"),
+        sha1 = "c8667ae573ceceac958a6639a2d3b350ddb911c4",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -96,8 +96,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_scalapb_fastparse",
-        artifact = scala_mvn_artifact("com.lihaoyi:fastparse:0.4.4"),
-        sha1 = "f065fe0afe6fd2b4557d985c37362c36f08f9947",
+        artifact = scala_mvn_artifact("com.lihaoyi:fastparse:1.0.0"),
+        sha1 = "334cc8841a7f72a16c258252232fd1db8c0e9791",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -108,8 +108,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_grpc_core",
-        artifact = "io.grpc:grpc-core:1.3.1",
-        sha1 = "a9b38b4a19af3ef208f4f6bf7871876d959c5eb1",
+        artifact = "io.grpc:grpc-core:1.11.0",
+        sha1 = "d0aa483ab2189b16f06f101f6e82dd601bb4a266",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -120,8 +120,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_grpc_stub",
-        artifact = "io.grpc:grpc-stub:1.3.1",
-        sha1 = "60bdfa9d8c664a9d87ae461106eff6eed8da6c54",
+        artifact = "io.grpc:grpc-stub:1.11.0",
+        sha1 = "692522483a8fd32916125733b7030c8c4b722f84",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -132,8 +132,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_grpc_protobuf",
-        artifact = "io.grpc:grpc-protobuf:1.3.1",
-        sha1 = "9562e977cacd6e128a31686c3e6948d61873c496",
+        artifact = "io.grpc:grpc-protobuf:1.11.0",
+        sha1 = "b87abe640170a6eaee11834098e6eec6b53b85b3",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -144,8 +144,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_grpc_netty",
-        artifact = "io.grpc:grpc-netty:1.3.1",
-        sha1 = "cc3831fccb76cfe21445f75cc055b5ffd979dc54",
+        artifact = "io.grpc:grpc-netty:1.11.0",
+        sha1 = "fd1f99288a19c0d881f02ca0fb35d9527a8e0f79",
         server = "scala_proto_deps_maven_server",
     )
 
@@ -156,8 +156,8 @@ def scala_proto_repositories():
 
     native.maven_jar(
         name = "scala_proto_rules_grpc_context",
-        artifact = "io.grpc:grpc-context:1.3.1",
-        sha1 = "28accd419b18d59055b8999f78f5cb7767c7bde8",
+        artifact = "io.grpc:grpc-context:1.11.0",
+        sha1 = "ce572ec046f6967d34fbac35eda20b4d0ed58c78",
         server = "scala_proto_deps_maven_server",
     )
 
